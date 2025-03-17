@@ -11,11 +11,17 @@ An urban scenario is created for simulation using Wireless Insite software. In t
 ![image](https://github.com/user-attachments/assets/ae2dbbd7-5214-4e48-b922-648f28077d24)
 
 The Probability Density Function (PDF) based on Rayleigh distribution:
+
 Pr(h)= h/γ^2   exp (- h^2/〖2γ〗^2  )
+
 Here,
+
 Pr = Probability density function
+
 h = Building heights in meter
+
 γ =  The most frequent building height
+
 
 The simulations are performed using Wireless Insite software, a simulation tool developed by Remcom, which is used for analyzing wireless communication systems. It provides precise predictions on the propagation of electromagnetic waves in urban, rural, and indoor settings with a visual representation including various effects.
 
@@ -27,47 +33,77 @@ Pathloss:
 Pathloss is the reduction of signal power including free space path loss (FSPL) and other losses.
 
 Free Space Pathloss:
+
                                   FSPL (dB) = 20 log⁡10 ( 4πdf/c  )……………..(1)
+                                  
 Here,
+
 d = distance between the antennas (m)
+
 f  = frequency of the signal (hz)
+
 c  = speed of light (ms^(-1))
+
 For calculating pathloss,
+
                                 PL (dB) = 10 log⁡10 (Pt/Pr) ……………..(2)
+                                
 Here,
+
 Pt = transmitted power (dBm)
+
 Pr  = received power (dBm)
+
 Gt  = maximum gain of transmitting antenna (dBi)
+
 Gr  = maximum gain of receiving antenna (dBi)
 
 RMS delay spread:
 RMS delay spread defines the average delay spread of the channel in seconds.
 RMS delay spread can be expressed as:
+
                                                      σ=  √((∑_(P=1)^N▒〖[Pp *( tp-〖tavg)〗^2]〗)/Psum) ……………..(3)
                                               
                                                  Psum = √(∑_(P=1)^N▒〖( Pp )〗)  ………………………...(4)
                
                                                      tavg= (∑_(P=1)^N▒〖( Pp * tp )〗)/Psum ……………………..…..(5)
+
 Here,
+
 Pp = power of each path
+
 tp = time of arrival of each path
+
 tavg = mean time of arrival of all paths
+
 Psum = sum of the power of all paths
 
 Power Delay Profile:
 The power delay profile represents the power level of received signal as a function of time delay.
 
 All the parameters and their values used in this project are listed below.
+
 Simulation frequency: 1 GHz
+
 Bandwidth:	500 KHz
+
 Waveform:	Sinusoidal
+
 Simulation area:	12 km x 12 km
+
 Area height:	3 Km
+
 Transmit power:	30 dBm
+
 Receiver threshold:	-109 dBm
+
 Antenna type:	Omni directional
+
 Polarization:	Vertical
+
 E Plane half power beamwidth:	90
+
 E plane first null beamwidth:	180
+
 Maximum gain:	5.2 dBi
 
