@@ -12,16 +12,7 @@ An urban scenario is created for simulation using Wireless Insite software. In t
 
 The Probability Density Function (PDF) based on Rayleigh distribution:
 
-Pr(h)= h/γ^2   exp (- h^2/〖2γ〗^2  )
-
-Here,
-
-Pr = Probability density function
-
-h = Building heights in meter
-
-γ =  The most frequent building height
-
+![image](https://github.com/user-attachments/assets/0d20b08d-6924-47ee-8842-f842e41cf542)
 
 The simulations are performed using Wireless Insite software, a simulation tool developed by Remcom, which is used for analyzing wireless communication systems. It provides precise predictions on the propagation of electromagnetic waves in urban, rural, and indoor settings with a visual representation including various effects.
 
@@ -32,51 +23,12 @@ We focus on pathloss, RMS delay spread, and power delay profile (PDP), significa
 Pathloss:
 Pathloss is the reduction of signal power including free space path loss (FSPL) and other losses.
 
-Free Space Pathloss:
+![pathloss eqnt](https://github.com/user-attachments/assets/900d21a5-6faa-4108-b2b8-52c0ec7d42a2)
 
-                                  FSPL (dB) = 20 log⁡10 ( 4πdf/c  )……………..(1)
-                                  
-Here,
-
-d = distance between the antennas (m)
-
-f  = frequency of the signal (hz)
-
-c  = speed of light (ms^(-1))
-
-For calculating pathloss,
-
-                                PL (dB) = 10 log⁡10 (Pt/Pr) ……………..(2)
-                                
-Here,
-
-Pt = transmitted power (dBm)
-
-Pr  = received power (dBm)
-
-Gt  = maximum gain of transmitting antenna (dBi)
-
-Gr  = maximum gain of receiving antenna (dBi)
 
 RMS delay spread:
 RMS delay spread defines the average delay spread of the channel in seconds.
-RMS delay spread can be expressed as:
-
-                                                     σ=  √((∑_(P=1)^N▒〖[Pp *( tp-〖tavg)〗^2]〗)/Psum) ……………..(3)
-                                              
-                                                 Psum = √(∑_(P=1)^N▒〖( Pp )〗)  ………………………...(4)
-               
-                                                     tavg= (∑_(P=1)^N▒〖( Pp * tp )〗)/Psum ……………………..…..(5)
-
-Here,
-
-Pp = power of each path
-
-tp = time of arrival of each path
-
-tavg = mean time of arrival of all paths
-
-Psum = sum of the power of all paths
+![RMS_Delay_Spread_Eqnt](https://github.com/user-attachments/assets/10f48770-7bb7-4aa4-af5a-9c4dc483de62)
 
 Power Delay Profile:
 The power delay profile represents the power level of received signal as a function of time delay.
